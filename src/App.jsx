@@ -172,6 +172,10 @@ function App() {
 
   return (
     <div className='calculator flex flex-col gap-1.5'>
+      <a className='text-blue-800 hover:underline'
+      href="https://zehdi02.github.io/csc-318-HWs/">
+        Go Back
+      </a>
       <input className='border rounded border-gray-200 text-2xl px-2 pt-5 text-end placeholder-black'
         placeholder='0' type='text' value={result} disabled />
       
