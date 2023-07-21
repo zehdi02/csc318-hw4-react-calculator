@@ -73,18 +73,18 @@ function App() {
     
     else {
       if (isEnteringSinValue) {
-        setSinValue(sinValue.concat(buttonValue)); // Update the lnValue
-        setResult(`sin(${sinValue}${buttonValue})`); // Display 'ln()' with entered number
+        setSinValue(sinValue.concat(buttonValue));
+        setResult(`sin(${sinValue}${buttonValue})`); 
         setIsEnteringSinValue(false);
       } 
       else if (isEnteringCosValue) {
-        setCosValue(cosValue.concat(buttonValue)); // Update the lnValue
-        setResult(`cos(${cosValue}${buttonValue})`); // Display 'ln()' with entered number
+        setCosValue(cosValue.concat(buttonValue)); 
+        setResult(`cos(${cosValue}${buttonValue})`);
         setIsEnteringCosValue(false);
       } 
       else if (isEnteringTanValue) {
-        setTanValue(tanValue.concat(buttonValue)); // Update the lnValue
-        setResult(`tan(${tanValue}${buttonValue})`); // Display 'ln()' with entered number
+        setTanValue(tanValue.concat(buttonValue));
+        setResult(`tan(${tanValue}${buttonValue})`); 
         setIsEnteringTanValue(false);
       } 
       
@@ -94,14 +94,14 @@ function App() {
         setIsEnteringLnValue(false);
       } 
       else if (isEnteringLogValue) {
-        setLogValue(logValue.concat(buttonValue)); // Update the lnValue
-        setResult(`log(${logValue}${buttonValue})`); // Display 'ln()' with entered number
+        setLogValue(logValue.concat(buttonValue)); 
+        setResult(`log(${logValue}${buttonValue})`);
         setIsEnteringLogValue(false);
       } 
       
       else if (isEnteringSqrtValue) {
-        setLnValue(sqrtValue.concat(buttonValue)); // Update the lnValue
-        setResult(`√(${sqrtValue}${buttonValue})`); // Display 'ln()' with entered number
+        setSqrtValue(sqrtValue.concat(buttonValue));
+        setResult(`√(${sqrtValue}${buttonValue})`); 
         setIsEnteringSqrtValue(false);
       } 
       
@@ -113,8 +113,6 @@ function App() {
 
   const clear = () => {
     setResult('');
-    setIsEnteringLnValue(false);
-    setLnValue('');
   };
 
   const evaluateExpression = (expression) => {
@@ -154,8 +152,6 @@ function App() {
 
   const calculate = () => {
     setResult(evaluateExpression(result));
-    setIsEnteringLnValue(false);
-    setLnValue('');
   };
 
   const handlePercentage = () => {
